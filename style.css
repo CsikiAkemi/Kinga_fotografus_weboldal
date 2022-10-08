@@ -1,0 +1,89 @@
+
+body {
+    margin: 0 auto;
+    background-position:center;
+    background-size: contain;
+    background-color: #000;
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background-color:black;
+    padding:10px 10px 10px 10px;
+    color:white;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu-log {
+    right: auto;
+    float: right;
+}
+footer {
+    width: 100%;
+    bottom: 0px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    padding-top:5px;
+    padding-bottom:5px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+.body_sec {
+   
+    background-image:url(/Kepek/fo_kep.jpg);
+    height: 850px;
+    background-position-x: center;
+  	background-position-y: center;
+ 	background-repeat: no-repeat;
+	text-align: center;
+	display: block;
+}
+
+
+h1{
+	font-size:70px;
+	margin-top:0px;
+	text-align: center;
+	padding-top: 100px;
+}
+h2{
+	font-size:50px;
+}
+
+.button{
+    font-weight: bold;
+    margin-left: 70px;
+    margin-right: 70px;
+	font-size:20px;
+	display: inline-block;
+	padding:0.80em 3.5em;
+    font-size:30px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+
+    
+}
+
+
+.instagram{
+    margin-top: 100px;
+}
