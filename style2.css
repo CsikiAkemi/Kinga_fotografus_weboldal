@@ -6,6 +6,7 @@ body {
     background-color: #000;
     margin-left: 10px;
     margin-right: 10px;  
+   
 }
 
 .menu {
@@ -16,6 +17,9 @@ body {
     color:white;
     margin: 0 auto;
     overflow: hidden;
+    
+    
+    z-index: 1;
 }
 .menu a {
     float: left;
@@ -30,11 +34,13 @@ body {
     float: right;
 }
 footer {
+    overflow: hidden;
+    position: sticky;
+    z-index: 1;
     width: 100%;
     bottom: 0px;
     background-color: #000;
     color: #fff;
-    position: absolute;
     padding-top:5px;
     padding-bottom:5px;
     text-align:center;
@@ -42,14 +48,17 @@ footer {
     font-weight:bold;
 }
 .body_sec {
-   
-    background-image:url(/Kepek/fo_kep.jpg);
+    overflow: hidden;
+    position: sticky;
+    background-image:url(./Kepek/fo_kep.jpg);
     height: 850px;
     background-position-x: center;
   	background-position-y: center;
  	background-repeat: no-repeat;
 	text-align: center;
 	display: block;
+    width: 100%;
+    
 }
 
 
@@ -57,30 +66,55 @@ h1{
 	font-size:70px;
 	margin-top:0px;
 	text-align: center;
+    color: #fff;
+    z-index: 1;
 	
 }
 h2{
 	font-size:50px;
+    color: #fff;
+    z-index: 1;
 }
-
 .Bemutatkozas{
-    font-weight: bolder;
-    font-size: 15px;
-    border: 1px solid black;
+   
+    position: sticky;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    color: black;
+    margin: auto;
     padding: 10px;
-    position:sticky;
-    left: 1000px;
-    width: 400px;
+    height:500px;
 
-}
-.p{
-    line-break:normal;
-    word-break: break-all;
+    
 }
 .Bemutatkozo_kep{
+    
+}
+ .Bem_kep{
+    position: sticky;
+    max-width: 335px;
+    float: left;
+    width: 50%;
+    
+   
+} 
+.Bem_szoveg{ 
     position:sticky;
-    right: 100px;
-    bottom:290px
+    background-color: rgba(218, 212, 212, 0.603);
+    width: 50%;
+    float: right;
+    height:100%;
     
     
+    
+    
+    
+} 
+p{
+    margin: 10px;
+    text-align: left;
+    white-space: normal;
+    width: "100vw";
+   
 }

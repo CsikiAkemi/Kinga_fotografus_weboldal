@@ -16,6 +16,7 @@ body {
     color:white;
     margin: 0 auto;
     overflow: hidden;
+    z-index: 1;
 }
 .menu a {
     float: left;
@@ -30,11 +31,13 @@ body {
     float: right;
 }
 footer {
+    overflow: hidden;
+    position: sticky;
+    z-index: 1;
     width: 100%;
     bottom: 0px;
     background-color: #000;
     color: #fff;
-    position: absolute;
     padding-top:5px;
     padding-bottom:5px;
     text-align:center;
@@ -43,13 +46,14 @@ footer {
 }
 .body_sec {
    
-    background-image:url(/Kepek/fo_kep.jpg);
+    background-image:url(./Kepek/fo_kep.jpg);
     height: 850px;
     background-position-x: center;
   	background-position-y: center;
  	background-repeat: no-repeat;
 	text-align: center;
 	display: block;
+    color: #fff;
 }
 
 
@@ -79,11 +83,15 @@ h2{
     position: relative;
     background-color: transparent;
     cursor: pointer;
+    color: #fff;
+    
 
     
 }
 
 
 .instagram{
-    margin-top: 100px;
+   position: sticky;
+   width: 100%;
+   padding-top: 350px;
 }

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style3.css">
+        <title>Kinga weboldal </title>
+    </head>
+<body>
+	
+	<!-- Header Section -->
+	<header>
+		
+	</header>
+	
+	<!-- Menu Navigation Bar -->
+	<nav class="menu">
+		<a href="#home">Kezdőlap</a>
+		<a href="#news">Rólam</a>
+		<a href="#notification">Munkáim</a>
+    <a href="#notification">Kapcsolat</a>
+		
+	</nav>
+	
+	<!-- Body section -->
+	<main class = "body_sec">
+		<section id="Content">
+            <h1>Gárdonyi Kinga</h1>
+            <h2>fotográfus</h2>
+		</section>
+        
+        <div class="kapcsolat">
+     
+            <div class="container">
+                    <div id="fent2" >Felső elem tartalma... </div> 
+                   
+                <form action="/action_page.php">
+                    
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="fname">Név:</label>
+                        </div>
+                        <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Kérem írja be a teljes nevét">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="email">E-mail cím:</label>
+                        </div>
+                        <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Kérem adja meg e-mail címét">
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="Telefon">Telefonszám:</label>
+                        </div>
+                        <div class="col-75">
+                        <input type="tel" id="tel" name="tel" placeholder="Kérem adja meg telefonszámát">
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="Kategória">Kategória:</label>
+                        </div>
+                        <div class="col-75">
+                        <select id="kategoria" name="Kategória">
+                            <option value="Kategória">Kérem válassza ki a kategóriát..</option>
+                            <option value="Esküvő">Esküvő</option>
+                            <option value="Portré">Portré</option>
+                            <option value="Buli">Buli</option>
+                            <option value="Koncert">Koncert</option>
+                            <option value="Egyéb">Egyéb</option>
+                        </select>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="subject">Üzenet</label>
+                        </div>
+                        <div class="col-75">
+                        <textarea id="textarea" name="subject" placeholder="Üzenet...." style="height:100%"></textarea>
+                        
+                        </div>
+                        <button type="submit">Küldés</button>
+                    </div>
+                   
+                </form>
+                
+            </div>
+
+            <div class="tarolo"> 
+                <div id="fent" >Felső elem tartalma... </div> 
+                <div id="bal" >Telefonszám </div> 
+                <div id="bal2" >E-mail cím</div> 
+                <div id="jobb">+365598247</div> 
+                <div id="jobb2">teszt.tesztelek@gmail.com</div> 
+
+                
+                <!-- <h1 class="Ajanlat_keres">Elérhetőségek</h1 -->
+                    <!-- Ez a jó ami lent van -->
+            <!-- <div class="Elerhetosegek">
+
+                
+                
+                        <h1 class="Ajanlat_keres">Elérhetőségek</h1>
+                            </div>
+                        <div class="Elerhetosegek_Kinga"></div>
+                            <p> Telefonszám:</p>
+                            <p> +369815570</p>
+                            <p> E-mail cím:</p>
+                            <p>gkinga94@gmail.com</p>
+                        <table>
+                            <tr>
+                                <td>Telefonszám:</td>
+                                <td>+369815570 </td>
+                    
+                            </tr>
+                            <tr>
+                                <td>E-mail cím:</td>
+                                <td>gkinga94@gmail.com</td>
+                            </tr>
+                        </table>
+                
+            </div>     -->
+        </div>
+        <!-- <div class="kapcsolat">
+            <div class="user_kuld">
+                <h1 class="Ajanlat_keres">Árajánlat kérés</h1
+                <form action="/action_page.php" method="post" target="_blank">
+                   
+                            <table>
+                                <tr>
+                                    <div class="input-group">
+                                        <td>
+                                            <label for="name">Név</label> 
+                                        </td>
+                                        <td>
+                                            <input type="text" id="name" required>
+                                        </td>   
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="input-group">
+                                        <td>
+                                            <label for="email">E-mail cím</label>
+                                        </td>
+                                        <td>
+                                            <input type="email" id="email" required>
+                                        </td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="input-group">
+                                        <td>
+                                            <label for="number">Telefon szám</label>
+                                        </td>
+                                        <td>
+                                            <input type="tel" id="number" required>
+                                        </td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <div class="input-group">
+                                        <td>
+                                            <label for="Kategória">Kategória</label>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>---Válassz!--- </option>
+                                                <option>Esküvő      </option>
+                                                <option>Buli       </option>
+                                                <option>Portré      </option>
+                                                <option>Egyéb         </option>
+                                            </select>
+                                        </td>
+                                    </div>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="message">Üzenet</label>
+                                    </td>
+
+                                    <div class="message">
+                                        <td>
+                                            <textarea id="message" rows="15"></textarea>
+                                        </td>
+                                    </div>
+                                </tr>
+                            </table>
+                            <button type="submit">Küldés</button>
+                   
+                </form>
+            </div>
+            
+
+        </div> -->
+	</main>
+  
+	
+	<!-- Footer Section -->
+	<footer>Footer Section</footer>
+  
+</body>
+</html>
+
+  
