@@ -16,10 +16,11 @@
 	
 	<!-- Menu Navigation Bar -->
 	<nav class="menu">
-		<a href="#home">Kezdőlap</a>
-		<a href="#news">Rólam</a>
-		<a href="#notification">Munkáim</a>
-    <a href="#notification">Kapcsolat</a>
+		<a href="/kinga.html">Kezdőlap</a>
+		<a href="/Rolam.html">Rólam</a>
+		<a href="/Munkaim.html">Munkáim</a>
+        <a href="/Kapcsolat.html">Kapcsolat</a>
+        <a href="/Arajanlat.thml">Áraim</a>
 		
 	</nav>
 	
@@ -42,7 +43,7 @@
                         <label for="fname">Név:</label>
                         </div>
                         <div class="col-75">
-                        <input type="text" id="name" name="name" placeholder="Kérem írja be a teljes nevét">
+                        <input type="text" id="name"  name="name" placeholder="Kérem írja be a teljes nevét">
                         </div>
                     </div>
                     <div class="row">
@@ -50,7 +51,7 @@
                         <label for="email">E-mail cím:</label>
                         </div>
                         <div class="col-75">
-                        <input type="email" id="email" name="email" placeholder="Kérem adja meg e-mail címét">
+                        <input type="email" id="email"pattern=".+@globex\.com" name="email" placeholder="Kérem adja meg e-mail címét">
                         </div>
                         
                     </div>
@@ -59,7 +60,7 @@
                         <label for="Telefon">Telefonszám:</label>
                         </div>
                         <div class="col-75">
-                        <input type="tel" id="tel" name="tel" placeholder="Kérem adja meg telefonszámát">
+                        <input type="tel" id="tel"    pattern="[0-9]{3}" name="tel" placeholder="Kérem adja meg telefonszámát">
                         </div>
                         
                     </div>
@@ -77,6 +78,7 @@
                             <option value="Egyéb">Egyéb</option>
                         </select>
                         </div>
+                        
                         
                     </div>
                     <div class="row">

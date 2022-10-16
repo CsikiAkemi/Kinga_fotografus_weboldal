@@ -1,5 +1,6 @@
 
 body {
+    position:relative;
     margin: 0 auto;
     background-position:center;
     background-size: contain;
@@ -15,8 +16,9 @@ body {
     padding:10px 10px 10px 10px;
     color:white;
     margin: 0 auto;
-    overflow: hidden;
+    overflow:hidden;
     z-index: 1;
+    
 }
 .menu a {
     float: left;
@@ -43,6 +45,7 @@ footer {
     text-align:center;
     font-size:30px;
     font-weight:bold;
+  
 }
 .body_sec {
    
@@ -58,6 +61,7 @@ footer {
 
 
 h1{
+    
 	font-size:70px;
 	margin-top:0px;
 	text-align: center;
@@ -76,22 +80,32 @@ h2{
 	padding:0.80em 3.5em;
     font-size:30px;
     padding: 10px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     text-align: center;
     text-decoration: none;
     font-family: sans-serif;
-    position: relative;
+    position:sticky;
     background-color: transparent;
     cursor: pointer;
     color: #fff;
-    
-
-    
 }
 
 
 .instagram{
-   position: sticky;
-   width: 100%;
-   padding-top: 350px;
+    position: sticky;
+    top:800px;
+    width: 100%;
+    max-width: 50px;
+    cursor: pointer;
+    display: inline-block;
+    
+   
+
+
+   
+    
+    
+   
+   
 }
