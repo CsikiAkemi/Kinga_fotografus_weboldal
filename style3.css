@@ -1,3 +1,4 @@
+
 body {
     margin: 0 auto;
     background-position:center;
@@ -186,6 +187,10 @@ h2{
     float: right;
 }
 
+.button:after{
+  color:red;
+}
+
 .tarolo { 
   padding: 5px;
   background-color: rgba(238, 230, 230, 0.705);
@@ -261,3 +266,5 @@ h2{
        
       }
   }
+
+  

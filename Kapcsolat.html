@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style3.css">
+        <!-- <script src="script.js"></script> -->
         <title>Kinga weboldal </title>
+        <!-- <script defer src="script.js"></script> -->
     </head>
 <body>
 	
@@ -34,174 +36,112 @@
         <div class="kapcsolat">
      
             <div class="container">
-                    <div id="fent2" >Felső elem tartalma... </div> 
-                   
-                <form action="/action_page.php">
+                    <div id="fent2" >Árajánlat kérés </div> 
+                    <div id="error_message">
+   
+                    </div>
+                    <!-- <form id="form" onsubmit="sendeamil()"> -->
+                    <form  action="https://formsubmit.co/sisina.akemi@gmail.com" method="POST">
                     
-                    <div class="row">
-                        <div class="col-25">
-                        <label for="fname">Név:</label>
+                        <div class="row">
+                            <div class="col-25">
+                            <label for="fname">Név:</label>
+                            </div>
+                            <div class="col-75">
+                            <input type="text" id="username"  name="name" placeholder="Kérem írja be a teljes nevét" 
+                            pattern=".{5,}">
+                            </div>
+                           
                         </div>
-                        <div class="col-75">
-                        <input type="text" id="name"  name="name" placeholder="Kérem írja be a teljes nevét">
+                        <div class="row">
+                            <div class="col-25">
+                            <label for="email">E-mail cím:</label>
+                            </div>
+                            <div class="col-75">
+                            <input type="email" id="email"  name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Kérem adja meg e-mail címét"required>
+                            
+                            </div>
+                            
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                        <label for="email">E-mail cím:</label>
+                        <div class="row">
+                            <div class="col-25">
+                            <label for="Telefon">Telefonszám:</label>
+                            </div>
+                            <div class="col-75">
+                            <input type="tel" id="phone"   name="phone"  placeholder="Kérem adja meg telefonszámát" pattern = "+36[0-9]{2}[0-9]{7}" value = "+36" data-rule="between-5-9">
+
+                            </div>
+                            
                         </div>
-                        <div class="col-75">
-                        <input type="email" id="email"pattern=".+@globex\.com" name="email" placeholder="Kérem adja meg e-mail címét">
+                        <div class="row">
+                            <div class="col-25">
+                            <label for="Kategória">Kategória:</label>
+                            </div>
+                            <div class="col-75">
+                            <select id="kategoria" name="Kategória" required>
+                                <option value="Kategória">Kérem válassza ki a kategóriát..</option>
+                                <option value="Esküvő">Esküvő</option>
+                                <option value="Portré">Portré</option>
+                                <option value="Buli">Buli</option>
+                                <option value="Koncert">Koncert</option>
+                                <option value="Egyéb">Egyéb</option>
+                            </select>
+                            </div>
+                            
+                            
                         </div>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                        <label for="Telefon">Telefonszám:</label>
+                        <div class="row">
+                            <div class="col-25">
+                            <label for="subject">Üzenet</label>
+                            </div>
+                            <div class="col-75">
+                            <textarea id="textarea" name="message" id="message" placeholder="Üzenet...." style="height:100%"pattern=".{5,}" required ></textarea>
+                            
+                            </div>
+                            <button onclick="Validate()" type="submit" >Küldés</button>
                         </div>
-                        <div class="col-75">
-                        <input type="tel" id="tel"    pattern="[0-9]{3}" name="tel" placeholder="Kérem adja meg telefonszámát">
-                        </div>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                        <label for="Kategória">Kategória:</label>
-                        </div>
-                        <div class="col-75">
-                        <select id="kategoria" name="Kategória">
-                            <option value="Kategória">Kérem válassza ki a kategóriát..</option>
-                            <option value="Esküvő">Esküvő</option>
-                            <option value="Portré">Portré</option>
-                            <option value="Buli">Buli</option>
-                            <option value="Koncert">Koncert</option>
-                            <option value="Egyéb">Egyéb</option>
-                        </select>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                        <label for="subject">Üzenet</label>
-                        </div>
-                        <div class="col-75">
-                        <textarea id="textarea" name="subject" placeholder="Üzenet...." style="height:100%"></textarea>
-                        
-                        </div>
-                        <button type="submit">Küldés</button>
-                    </div>
-                   
-                </form>
+                    
+                    </form>
                 
             </div>
 
             <div class="tarolo"> 
-                <div id="fent" >Felső elem tartalma... </div> 
+                <div id="fent" >Elérhetőségek </div> 
                 <div id="bal" >Telefonszám </div> 
                 <div id="bal2" >E-mail cím</div> 
                 <div id="jobb">+365598247</div> 
                 <div id="jobb2">teszt.tesztelek@gmail.com</div> 
 
-                
-                <!-- <h1 class="Ajanlat_keres">Elérhetőségek</h1 -->
-                    <!-- Ez a jó ami lent van -->
-            <!-- <div class="Elerhetosegek">
-
-                
-                
-                        <h1 class="Ajanlat_keres">Elérhetőségek</h1>
-                            </div>
-                        <div class="Elerhetosegek_Kinga"></div>
-                            <p> Telefonszám:</p>
-                            <p> +369815570</p>
-                            <p> E-mail cím:</p>
-                            <p>gkinga94@gmail.com</p>
-                        <table>
-                            <tr>
-                                <td>Telefonszám:</td>
-                                <td>+369815570 </td>
-                    
-                            </tr>
-                            <tr>
-                                <td>E-mail cím:</td>
-                                <td>gkinga94@gmail.com</td>
-                            </tr>
-                        </table>
-                
-            </div>     -->
+    
         </div>
-        <!-- <div class="kapcsolat">
-            <div class="user_kuld">
-                <h1 class="Ajanlat_keres">Árajánlat kérés</h1
-                <form action="/action_page.php" method="post" target="_blank">
-                   
-                            <table>
-                                <tr>
-                                    <div class="input-group">
-                                        <td>
-                                            <label for="name">Név</label> 
-                                        </td>
-                                        <td>
-                                            <input type="text" id="name" required>
-                                        </td>   
-                                    </div>
-                                </tr>
-                                <tr>
-                                    <div class="input-group">
-                                        <td>
-                                            <label for="email">E-mail cím</label>
-                                        </td>
-                                        <td>
-                                            <input type="email" id="email" required>
-                                        </td>
-                                    </div>
-                                </tr>
-                                <tr>
-                                    <div class="input-group">
-                                        <td>
-                                            <label for="number">Telefon szám</label>
-                                        </td>
-                                        <td>
-                                            <input type="tel" id="number" required>
-                                        </td>
-                                    </div>
-                                </tr>
-                                <tr>
-                                    <div class="input-group">
-                                        <td>
-                                            <label for="Kategória">Kategória</label>
-                                        </td>
-                                        <td>
-                                            <select>
-                                                <option>---Válassz!--- </option>
-                                                <option>Esküvő      </option>
-                                                <option>Buli       </option>
-                                                <option>Portré      </option>
-                                                <option>Egyéb         </option>
-                                            </select>
-                                        </td>
-                                    </div>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="message">Üzenet</label>
-                                    </td>
+<!-- <script>
+    var form = document.getElementById('form')
 
-                                    <div class="message">
-                                        <td>
-                                            <textarea id="message" rows="15"></textarea>
-                                        </td>
-                                    </div>
-                                </tr>
-                            </table>
-                            <button type="submit">Küldés</button>
-                   
-                </form>
-            </div>
-            
+form.addEventListener('submit',function(event){
 
-        </div> -->
+  event.preventDefault()
+
+  var username=document.getElementById('username').ariaValueMax
+  console.log(username)
+});
+</script> -->
+        <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendemail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "username",
+            Password : "password",
+            To : 'sisina.akemi@gmail.com',
+            From : " ",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
+        </script> -->
+       
 	</main>
   
 	
