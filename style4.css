@@ -31,24 +31,66 @@ body {
     right: auto;
     float: right;
 }
-footer {
-    overflow: hidden;
-    position: sticky;
-    z-index: 1;
-    width: 100%;
-    bottom: 0px;
-    background-color: #000;
-    color: #fff;
-    padding-top:5px;
-    padding-bottom:5px;
-    text-align:center;
-    font-size:30px;
-    font-weight:bold;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer{
+  overflow: hidden;
+  position: sticky;
+  z-index: 1;
+ 
+ 
+  
+}
+
+.footer-content{
+
+  background-color: rgb(3, 3, 3);
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding: 1px 1px;
+  color: #fff;
+
+  
+
+}
+
+.footer-content h3{
+  color: #fff;
+  font-size: 1.5rem;
+
+}
+
+.footer-content p{
+  max-width:700px;
+  color: #fff;
+  opacity: 7;
+  margin: 5px 0;
+  /* cursor: pointer; */
+  transition: 0.5s;
+}
+.footer-content p:hover{
+  opacity: 1;
+}
+.footer-content .socialIcons a {
+color: #fff;
+text-decoration: none;
+margin:5px;
+font-size: 1.2rem;
+padding: 5px;
+border-radius: 50%;
+border: 1 px solid wheat;
+
+
 }
 .body_sec {
     overflow: hidden;
     position: sticky;
-    background-image:url(./Kepek/fo_kep.jpg);
+    background-color: rgb(34, 32, 32);
     height: 100%;
     background-position-x: center;
   	background-position-y: center;
@@ -91,11 +133,11 @@ h2{
 
 .grid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(600px, 2fr)); */
-  /* grid-template-columns: auto auto ; */
-  grid-template-columns: 2fr 2fr ;
-  grid-gap: 50px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr)); 
+ grid-template-columns: auto auto ;
+  grid-gap: 40px;
+  padding: 30px;
+  width: 60%;
   
   
   
@@ -107,17 +149,21 @@ h2{
 }
 
 .img-wrapper > img {
-  display: block;
+  position: relative;
+  display: flex;
   width: 100%;
   object-fit: cover;
   object-position: center;
+  
 }
 
 .img-wrapper > .content {
-  position: absolute;
+ 
+  position:absolute;
   inset:0;
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 3vw;
+  font-weight: bold;
+  width: 100%;
   background: rgba(255, 255, 255, .4);
   display: flex;
   justify-content: center;
@@ -135,9 +181,8 @@ h2{
 }
 
 .img-wrapper:hover > img.blur {
-  filter: blur(5px);
+  filter: blur(2px);
 }
-
 
 
 .img-wrapper > .content.fade {

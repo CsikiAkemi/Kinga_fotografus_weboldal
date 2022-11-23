@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./stylegalerry.css">
+    <link rel="stylesheet"  href="./lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Kinga weboldal </title>
 </head>
 
@@ -22,8 +24,6 @@
 		<a href="/Rolam.html">Rólam</a>
 		<a href="/Munkaim.html">Munkáim</a>
         <a href="/Kapcsolat.html">Kapcsolat</a>
-        <a href="/Arajanlat.thml">Áraim</a>
-
 
     </nav>
 
@@ -31,25 +31,35 @@
     <main class="body_sec">
         <section id="Content">
             <h1>Gárdonyi Kinga</h1>
-            <h2>fotográfus</h2>
+            <h2>Referenciáim</h2>
         </section>
         <div class="container">
             <div class="Esemeny">Reklám</div>
             <div class="box">
                 <div class="dream">
-                    <img src="/Kepek/Reklám/1.jpg">
-                    <img src="/Kepek/Reklám/2.jpg">
+                    <a href="/Kepek/Reklám/1.jpg" data-lightbox="models" dat-title="Caption1">
+                        <img src="/Kepek/Reklám/1.jpg">
+                    </a>
+                    <a href="/Kepek/Reklám/2.jpg" data-lightbox="models" dat-title="Caption1">
+                        <img src="/Kepek/Reklám/2.jpg">
+                    </a>
                     
                 </div>
                     <div class="dream">
-                        <img src="/Kepek/Reklám/3.jpg">
-                        <img src="/Kepek/Reklám/4.jpg">
+                        <a href="/Kepek/Reklám/3.jpg" data-lightbox="models" dat-title="Caption1">
+                            <img src="/Kepek/Reklám/3.jpg">
+                        </a>
+                        <a href="/Kepek/Reklám/4.jpg" data-lightbox="models" dat-title="Caption1">
+                            <img src="/Kepek/Reklám/4.jpg">
+                        </a>
                        
                         
     
                 </div>
                 <div class="dream">
-                    <img src="/Kepek/Reklám/5.jpg">
+                    <a href="/Kepek/Reklám/5.jpg" data-lightbox="models" dat-title="Caption1">
+                        <img src="/Kepek/Reklám/5.jpg">
+                    </a>
                   
                   
                 </div>
@@ -59,12 +69,31 @@
         
 
         </div>
+        <script src="lightbox-plus-jquery.js"></script>
 
     </main>
 
 
     <!-- Footer Section -->
-    <footer>Footer Section</footer>
+    <footer>
+        <div class="footer-content">
+          <h3>Elérhetőségek</h3>
+          <p>
+            E-mail cím: teszt@gmail.com<br>
+            Telefonszám: +36704458745<br>
+    
+          </p>
+          <div class="socialIcons">
+            <a href=""><li class="fa-brands fa-facebook"></li> </a>
+            <a href="https://www.instagram.com/gardonyi_k/?hl=hu"><li class="fa-brands fa-instagram"></li> </a>
+            <a href=""><li class="fa-brands fa-behance-square"></li> </a>
+            
+    
+          </div>
+        </div>
+    
+         
+    </footer>
 
 </body>
 

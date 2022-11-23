@@ -1,14 +1,14 @@
 
 
-// var form = document.getElementById('form')
+var form = document.getElementById('form')
 
-// form.addEventListener('submit',function(event){
+form.addEventListener('submit',function(event){
 
-//   event.preventDefault()
+  event.preventDefault()
 
-//   var username=document.getElementById('username').ariaValueMax
-//   console.log(username)
-// });
+  var username=document.getElementById('username').ariaValueMax
+  console.log(username)
+});
 
 // function validate(){
 //   var username = document.getElementById("username").value;

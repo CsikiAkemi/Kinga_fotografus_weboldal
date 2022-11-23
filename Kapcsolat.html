@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- <script src="script.js"></script> -->
         <title>Kinga weboldal </title>
         <!-- <script defer src="script.js"></script> -->
@@ -22,7 +23,7 @@
 		<a href="/Rolam.html">Rólam</a>
 		<a href="/Munkaim.html">Munkáim</a>
         <a href="/Kapcsolat.html">Kapcsolat</a>
-        <a href="/Arajanlat.thml">Áraim</a>
+        
 		
 	</nav>
 	
@@ -41,15 +42,15 @@
    
                     </div>
                     <!-- <form id="form" onsubmit="sendeamil()"> -->
-                    <form  action="https://formsubmit.co/sisina.akemi@gmail.com" method="POST">
+                    <form  action="https://formspree.io/f/xoqbkopr" method="POST" required>
                     
                         <div class="row">
                             <div class="col-25">
                             <label for="fname">Név:</label>
                             </div>
                             <div class="col-75">
-                            <input type="text" id="username"  name="name" placeholder="Kérem írja be a teljes nevét" 
-                            pattern=".{5,}">
+                            <input type="text" id="username"  name="name" placeholder="Kérem írja be a teljes nevét " 
+                            pattern=".{5,}" required>
                             </div>
                            
                         </div>
@@ -68,7 +69,7 @@
                             <label for="Telefon">Telefonszám:</label>
                             </div>
                             <div class="col-75">
-                            <input type="tel" id="phone"   name="phone"  placeholder="Kérem adja meg telefonszámát" pattern = "+36[0-9]{2}[0-9]{7}" value = "+36" data-rule="between-5-9">
+                            <input type="tel" id="phone"   name="phone"  placeholder="Kérem adja meg telefonszámát" pattern = "+36[0-9]{2}[0-9]{7}" value = "+36" data-rule="between-5-9" required>
 
                             </div>
                             
@@ -95,10 +96,12 @@
                             <label for="subject">Üzenet</label>
                             </div>
                             <div class="col-75">
-                            <textarea id="textarea" name="message" id="message" placeholder="Üzenet...." style="height:100%"pattern=".{5,}" required ></textarea>
+                            <textarea id="textarea" name="message" id="message" placeholder="Üzenet...." style="height:100%"pattern="{5}" required ></textarea>
                             
                             </div>
+                            <a href="/Kapcsolat.html">
                             <button onclick="Validate()" type="submit" >Küldés</button>
+                            </a>
                         </div>
                     
                     </form>
@@ -107,46 +110,61 @@
 
             <div class="tarolo"> 
                 <div id="fent" >Elérhetőségek </div> 
-                <div id="bal" >Telefonszám </div> 
-                <div id="bal2" >E-mail cím</div> 
-                <div id="jobb">+365598247</div> 
-                <div id="jobb2">teszt.tesztelek@gmail.com</div> 
+                <div class="content2">
+                    <div class="socialIcons2">
+                        <div><i class="fa-solid fa-phone"></i>  +36704588710</div>
+                        <div><i class="fa-regular fa-envelope"></i> Teszt@gmail.com</div>
+                      <a href=""><div><i class="fa-brands fa-facebook"></i> /Kinga_fotográfus</div></a> 
+                      <a href="https://www.instagram.com/gardonyi_k/?hl=hu"><div><i class="fa-brands fa-instagram"></i> /Kinga_fotográfus</div></a>
+                      <a href=""><div><i class="fa-brands fa-behance"></i>     /Kinga_fotográfus</div></a> 
+                      
+              
+                    </div>
+                  </div>
+                  <div class="tarolo2"> 
+                    <div id="lent_Ar" >Áraim </div> 
 
-    
-        </div>
-<!-- <script>
-    var form = document.getElementById('form')
+                    <div class="arak">
+                        <p>
+                            Koncert és Buli: 35.000Ft<br>
+                            Események és Programok: 30.000Ft<br>
+                            Esküvő: 40.000Ft<br>
+                            Étel: 20.000Ft<br>
+                            Portré: 30.000Ft<br>
+                            Promócció: 20.000Ft<br>
+                            Reklám: 25.000Ft<br>
+                        </p>
 
-form.addEventListener('submit',function(event){
+                    </div>
+                </div>
+            </div>
+           
 
-  event.preventDefault()
 
-  var username=document.getElementById('username').ariaValueMax
-  console.log(username)
-});
-</script> -->
-        <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-            function sendemail(){
-            Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : "username",
-            Password : "password",
-            To : 'sisina.akemi@gmail.com',
-            From : " ",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-    }
-        </script> -->
        
 	</main>
   
 	
 	<!-- Footer Section -->
-	<footer>Footer Section</footer>
+    <footer>
+        <div class="footer-content">
+          <h3>Elérhetőségek</h3>
+          <p>
+            E-mail cím: teszt@gmail.com<br>
+            Telefonszám: +36704458745<br>
+    
+          </p>
+          <div class="socialIcons">
+            <a href=""><li class="fa-brands fa-facebook"></li> </a>
+            <a href="https://www.instagram.com/gardonyi_k/?hl=hu"><li class="fa-brands fa-instagram"></li> </a>
+            <a href=""><li class="fa-brands fa-behance-square"></li> </a>
+            
+    
+          </div>
+        </div>
+    
+         
+    </footer>
   
 </body>
 </html>

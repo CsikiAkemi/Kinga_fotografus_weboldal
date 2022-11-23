@@ -31,20 +31,60 @@ body {
     right: auto;
     float: right;
 }
-footer {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer{
   overflow: hidden;
-    position: sticky;
-    z-index: 1;
-    width: 100%;
-    bottom: 0px;
-    background-color: #000;
-    color: #fff;
-    position:static;
-    padding-top:5px;
-    padding-bottom:5px;
-    text-align:center;
-    font-size:30px;
-    font-weight:bold;
+  position: sticky;
+  z-index: 1;
+ 
+ 
+  
+}
+
+.footer-content{
+
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding: 1px 1px;
+  color: #fff;
+  
+
+}
+
+.footer-content h3{
+  color: #fff;
+  font-size: 1.5rem;
+
+}
+
+.footer-content p{
+  max-width:700px;
+  color: #fff;
+  opacity: 0.7;
+  margin: 5px 0;
+  /* cursor: pointer; */
+  transition: 0.5s;
+}
+.footer-content p:hover{
+  opacity: 1;
+}
+.footer-content .socialIcons a {
+color: #fff;
+text-decoration: none;
+margin:5px;
+font-size: 1.2rem;
+padding: 5px;
+border-radius: 50%;
+border: 1 px solid wheat;
+
+
 }
 .body_sec {
    
@@ -199,8 +239,11 @@ h2{
   position:relative;
   margin:0px; 
   color:black;
+  text-align: left;
+  font-size: 18px;
+  
 }   
-#fent {
+.tarolo > #fent {
   
   background-color: rgba(243, 234, 234, 0.678);
   position:static; 
@@ -209,6 +252,8 @@ h2{
   height:50px;  
   width: 100%; 
   font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
   
 
   }     
@@ -267,4 +312,67 @@ h2{
       }
   }
 
+
   
+  .content2{
+  
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 1px 1px;
+    color: rgb(8, 8, 8);
+    
+    
+  }
+ 
+  .content2 p{
+    max-width:700px;
+    color: rgb(10, 10, 10);
+    opacity: 0.7;
+    margin: 5px 0;
+    /* cursor: pointer; */
+    transition: 0.5s;
+  }
+ 
+  .content2 p:hover{
+    opacity: 1;
+  }
+  .content2 .socialIcons2  {
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  margin: 5px;
+  font-size: 1rem;
+
+
+  }
+
+  .tarolo2 { 
+    padding: 5px;
+    border: 1px solid black;
+    height:47%;  
+    width: 100%; 
+    position:relative;
+    margin:0px; 
+    color:black;
+    text-align: left;
+    font-size: 18px;
+    
+  }   
+
+#lent_Ar{
+  background-color: rgba(243, 234, 234, 0.678);
+  position:static; 
+  top: 10px;  
+  left: 0; 
+  height:50px;  
+  width: 100%; 
+  font-size: 20px;
+  text-align: center;
+}
+.arak{
+  font-weight: bold;
+  word-spacing: 5px;
+  font-size: 0.8rem;
+}

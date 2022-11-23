@@ -33,19 +33,60 @@ body {
     right: auto;
     float: right;
 }
-footer {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.footer{
     overflow: hidden;
     position: sticky;
     z-index: 1;
-    width: 100%;
-    bottom: 0px;
-    background-color: #000;
+   
+   
+    
+}
+
+.footer-content{
+ 
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 1px 1px;
     color: #fff;
-    padding-top:5px;
-    padding-bottom:5px;
-    text-align:center;
-    font-size:30px;
-    font-weight:bold;
+    
+
+}
+
+.footer-content h3{
+    color: #fff;
+    font-size: 1.5rem;
+
+}
+
+.footer-content p{
+    max-width:700px;
+    color: #fff;
+    opacity: 0.7;
+    margin: 5px 0;
+    /* cursor: pointer; */
+    transition: 0.5s;
+}
+.footer-content p:hover{
+    opacity: 1;
+}
+.footer-content .socialIcons a {
+color: #fff;
+text-decoration: none;
+margin:5px;
+font-size: 1.2rem;
+padding: 5px;
+border-radius: 50%;
+border: 1 px solid wheat;
+
+
 }
 .body_sec {
    
@@ -83,9 +124,7 @@ h2{
     color: white;
     margin: auto;
     padding: 10px;
-  
-
-    
+ 
 }
 
  .Bem_kep{
@@ -99,18 +138,22 @@ h2{
 .Bem_szoveg{ 
     overflow:scroll;
     position:relative;
-    background-color: rgba(218, 212, 212, 0.603);
+    background-color: rgba(112, 109, 109, 0.603);
     width: 50%;
     display: grid;
     float: right;
     height:505px;
     margin-right:auto;  
-   
-    
-    
-    
-    
 } 
+
+@media screen and (max-width: 100px) {
+    .Bem_szoveg {
+      width: 100%;
+      margin-top: 0;
+      font-size: 100%;
+     
+    }
+}
 p{
    font-size: 1.3em;
     margin: 10px;
